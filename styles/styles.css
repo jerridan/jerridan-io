@@ -1,0 +1,1 @@
+body{font-family:'Roboto','Noto','Helvetica Neue','Helvetica','Arial','sans-serif'}.home{width:100%;background:url('bg_small.png');background-size:cover}@media screen and (min-width:40em){.home{background:url('bg_medium.png')}}@media screen and (min-width:64em){.home{background:url('bg_large.png')}}
