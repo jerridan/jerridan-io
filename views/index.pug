@@ -6,26 +6,42 @@ head
   meta(name='author' content='Jerridan Quiring')
   meta(name='description' content='Jerridan is a software developer in Toronto, Ontario.')
   meta(name='viewport' content='width=device-width, initial-scale=1')
-  link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css')
   link(href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css')
-  link(rel='stylesheet' href='foundation.css')
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' type='text/css')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css' rel='stylesheet' type='text/css')
   link(rel='stylesheet' href='styles.css')
 body
-  .home
-    div(data-responsive-toggle='main-menu' data-hide-for='medium').title-bar
-      button(type='button' data-toggle).menu-icon
-    div(id='main-menu')
-      ul(data-dropdown-menu).menu.dropdown
-        li
-          a(href='#home') HOME
-        li
-          a(href='#projects') PROJECTS
-        li
-          a(href='#skills') SKILLS
-        li
-          a(href='#contact') CONTACT
+  section(id='home')
+    .home
+      .container
+        nav#main-menu
+          i#menu-icon.material-icons menu
+          ul
+            li
+              a(href='#home') HOME
+            li
+              a(href='#projects') PROJECTS
+            li
+              a(href='#skills') SKILLS
+            li
+              a(href='#contact') CONTACT
+        .title
+          h1 JERRIDAN.IO
+        .profile-pic
+        .social
+          a(href='https://twitter.com/JerridanQ' target='_blank').social-icon
+            i.zmdi.zmdi-twitter.zmdi-hc-2x
+          a(href='https://github.com/jerridan' target='_blank').social-icon
+            i.zmdi.zmdi-github.zmdi-hc-2x
+          a(href='https://ca.linkedin.com/in/jerridan-quiring-0811a120' target='_blank').social-icon
+            i.zmdi.zmdi-linkedin.zmdi-hc-2x
+        .introduction
+          p Hello! My name is Jerridan Quiring, and I’m a developer located in downtown Toronto. When I’m not coding or
+            | &nbsplearning something new, you might find me reading a fiction novel in a coffee shop, camping in Muskoka, or
+            | travelling to new and exciting places.
+          p My skill set mainly revolves around building and deploying JavaScript-based web applications with tools like
+            | &nbspNode.js, React and AngularJS. I also have experience with languages like PHP and C, creating responsive
+            | &nbspwebsites, and basic Linux-based server administration.
 
-
-  script(src='jquery-2.2.3.min.js')
-  script(src='foundation.min.js')
-  script(src='app.js')
+  script(src='mobile_menu.js')

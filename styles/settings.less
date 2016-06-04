@@ -1,3 +1,68 @@
-body {
+@mobile: ~"only screen and (max-width: 639px)";
+@tablet: ~"only screen and (max-width: 1023px)";
+@desktop: ~"only screen and (min-width: 1024px)";
+
+// Color palette
+@dark-primary: #0097A7;
+@primary: #00BCD4;
+@light-primary: #B2EBF2;
+@text-icons: #FFF;
+@accent: #FFC107;
+@primary-text: #212121;
+@secondary-text: #727272;
+@divider-color: #B6B6B6;
+
+// Fonts
+html {
   font-family: 'Roboto', 'Noto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 10px;
+  font-weight: 100;
+  color: #FFF;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 48px;
+  @media @mobile, @tablet {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  @media @mobile, @tablet {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-size: 31px;
+  @media @mobile, @tablet {
+    font-size: 19px;
+  }
+}
+
+h4 {
+  font-size: 25px;
+  @media @mobile, @tablet {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+  @media @mobile, @tablet {
+    font-size: 17px;
+  }
+}
+
+h6 {
+  font-size: 16px;
 }
