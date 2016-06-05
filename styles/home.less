@@ -1,76 +1,30 @@
-.home {
+#home {
   width: 100%;
   min-height: 50rem;
   background-size: cover;
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('to_blur8.jpg') center -600px; // TODO: Optimize BG image
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+  ),
+  url('union_station_desktop.jpg') center bottom;
   padding: 1rem 0;
   @media @tablet {
-    background: url('bg_home_medium.png');
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ),
+    url('union_station_tablet.jpg') center bottom;
   }
   @media @mobile {
-    background: url('bg_home_small.png');
-  }
-  #menu-icon {
-    display: none;
-    margin-top: 15px;
-    background: rgba(224, 224, 224, 0.2);
-    @media @mobile {
-      display: inline-block;
-    }
-  }
-  #main-menu {
-    ul {
-      list-style: none;
-      display: flex;
-      font-size: 1.6rem;
-      margin-top: 0;
-      padding: 1.5rem 0;
-      @media @mobile {
-        padding: 0;
-        transition: all 0.25s;
-        display: none;
-        margin-top: -2px;
-      }
-      li {
-        display: inline;
-        margin: auto;
-        @media @mobile {
-          display: block;
-          line-height: 3rem;
-          background: rgba(224, 224, 224, 0.2);
-          &:not(:first-child) {
-            border-top: 1px rgba(182, 182, 182, 0.2) solid;
-          }
-        }
-        a {
-          border-bottom: 2px solid transparent;
-          padding: 1rem;
-          &:hover {
-            border-color: #FFF;
-          }
-          transition: 0.25s;
-          @media @mobile {
-            border: none;
-          }
-        }
-      }
-    }
-    &.open {
-      ul {
-        @media @mobile {
-          display: block;
-        }
-      }
-    }
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ),
+    url('union_station_mobile.jpg') center bottom;
   }
   .title {
     text-align: center;
-    margin: 3rem 0;
+    margin: 7.5rem 0 3rem;
   }
   .profile-pic {
     width: 150px;
@@ -84,18 +38,18 @@
     width: 15rem;
     margin: auto;
     display: flex;
-    .linkedin {
-      background: url('social/linked_in_34.png') center no-repeat;
-    }
-    .github {
-      background: url('social/github_32.png') center no-repeat;
-    }
-    .twitter {
-      background: url('social/twitter_34.png') center no-repeat;
-    }
     .social-icon {
       display: inline-block;
       margin: 1rem auto;
+      .zmdi-twitter:hover {
+        color: #00ACED;
+      }
+      .zmdi-linkedin:hover {
+        color: #0077B5;
+      }
+      .zmdi-github:hover {
+        color: #4078C0;
+      }
     }
   }
   .introduction {
@@ -104,5 +58,8 @@
     line-height: 2.5rem;
     width: 57.6rem;
     margin: 3rem auto 0;
+    @media @mobile {
+      width: 100%;
+    }
   }
 }
