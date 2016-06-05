@@ -1,3 +1,100 @@
 #projects {
-
+  width: 100%;
+  min-height: 50rem;
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+  ),
+  url('railway_jungle_desktop.jpg') center;
+  .title {
+    text-align: center;
+    padding: 3rem 0;
+    h2 {
+      margin: 0;
+    }
+  }
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    .project-card {
+      background: #FFF;
+      width: 35rem;
+      height: 25rem;
+      border-radius: 2px;
+      display: inline-block;
+      margin: 2rem auto;
+      .image {
+        height: 18rem;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        .name {
+          position: absolute;
+          bottom: 0;
+          margin: 1rem;
+        }
+      }
+      .description, .technologies {
+        font-weight: 300;
+        font-size: 1.4rem;
+        color: #666;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 1rem;
+        span {
+          display: inline-block;
+        }
+      }
+      .description {
+        height: 4rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+      }
+      .technologies {
+        height: 3rem;
+      }
+      &#hooli {
+        .image {
+          background: url('http://thumb7.shutterstock.com/display_pic_with_logo/120493/377805211/stock-photo-linking-entities-broken-connection-or-broken-relation-network-networking-social-media-internet-377805211.jpg') center;
+        }
+      }
+      &#fulkerson {
+        .image {
+          background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+          ),
+          url('projects/fulkerson.jpg') center;
+        }
+      }
+      &#guidebook {
+        .image {
+          background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+          ),
+          url('projects/icom_logo.png') center no-repeat;
+        }
+      }
+      &#iris {
+        .image {
+          background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+          ),
+          url('projects/iris.jpg') center no-repeat;
+        }
+      }
+      &#heit {
+        .image {
+          background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+          ),
+          url('projects/heit.jpg') center no-repeat;
+        }
+      }
+    }
+  }
 }

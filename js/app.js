@@ -7,5 +7,5 @@ if ($(window).width() < 640) {
 
 // highlight menu based on page navigation
 $(document).scroll(function () {
-  $('nav ul li a[href="#' + $('section:hover').attr('id') + '"]').addClass('active').siblings('nav a').removeClass('active');
+  $('nav ul li a[href="#' + $('section:hover').attr('id') + '"]').addClass('active').siblings('nav ul li a').removeClass('active');
 });
