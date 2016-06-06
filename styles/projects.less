@@ -5,7 +5,7 @@
           rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5)
   ),
-  url('railway_jungle_desktop.jpg') center;
+  url('railway_jungle_desktop.jpg') center; // TODO: Optimize for tablets, mobiles
   .title {
     text-align: center;
     padding: 3rem 0;
@@ -23,6 +23,9 @@
       border-radius: 2px;
       display: inline-block;
       margin: 2rem auto;
+      &:hover {
+        box-shadow: 0 0 3px #C8C8C8;
+      }
       .image {
         height: 18rem;
         width: 100%;
@@ -56,7 +59,11 @@
       }
       &#hooli {
         .image {
-          background: url('http://thumb7.shutterstock.com/display_pic_with_logo/120493/377805211/stock-photo-linking-entities-broken-connection-or-broken-relation-network-networking-social-media-internet-377805211.jpg') center;
+          background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+          ),
+          url('projects/hooli.png') center no-repeat;
         }
       }
       &#fulkerson {
@@ -95,6 +102,58 @@
           url('projects/heit.jpg') center no-repeat;
         }
       }
+    }
+  }
+  .md-modal {
+    .content {
+      max-height: 45rem;
+      @media @mobile {
+        max-height: 30rem;
+      }
+      overflow-y: auto;
+    }
+    .image {
+      position: relative;
+      height: 15rem;
+      .name {
+        position: absolute;
+        bottom: 0;
+        color: #FFF;
+        margin: 1rem;
+      }
+    }
+    .description {
+      padding: 1rem;
+      font-size: 1.4rem;
+      p {
+        font-weight: 400;
+      }
+    }
+    .actions {
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+      button {
+        background: none;
+        outline: none;
+        border: none;
+        color: #303F9F;
+        font-weight: 700;
+        font-size: 1.4rem;
+        padding: 0.75rem;
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+  #fulkerson-modal {
+    .image {
+      background: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+      ),
+      url('projects/fulkerson_600.jpg') center no-repeat;
     }
   }
 }

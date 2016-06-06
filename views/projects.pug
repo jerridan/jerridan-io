@@ -3,43 +3,81 @@ section#projects
     .title
       h2 PROJECTS
     .project-container
-      .project-card#fulkerson
-        a(href='')
-          .image
-            h4.name Ford-Fulkerson Visual
-          .description
-            span A web app showing a visual animation of the Ford-Fulkerson algorithm on user-defined flow networks.
-          .technologies
-            span D3.js | Node.js | ES6 | Mocha | Chai
-      .project-card#guidebook
-        a(href='')
-          .image
-            h4.name Guidebook
-          .description
-            span A content management system used to create employee training material and exercises.
-          .technologies
-            span React | Node.js | Immutable | webpack | PHP | LESS
-      .project-card#iris
-        a(href='')
-          .image
-            h4.name Iris
-          .description
-            span A simple, responsive weather application
-          .technologies
-            span React | Node.js | webpack | LESS
-      .project-card#hooli
-        a(href='')
-          .image
-            h4.name Hooli Drive
-          .description
-            span A client-server file transfer system.
-          .technologies
-            span C | Redis | TCP | UDP | Ubuntu
-      .project-card#heit
-        a(href='')
-          .image
-            h4.name Heit Lab Website
-          .description
-            span A website built for the Heit Lab at Western University.
-          .technologies
-            span Wordpress | HTML | CSS | PHP
+      .project-card.md-trigger#fulkerson(data-modal='fulkerson')
+        .image
+          h4.name Ford-Fulkerson Visual
+        .description
+          span A web app showing a visual animation of the Ford-Fulkerson algorithm on user-defined flow networks.
+        .technologies
+          span D3.js | Node.js | ES6 | Mocha | Chai
+      .project-card.md-trigger#guidebook(data-modal='guidebook')
+        .image
+          h4.name Guidebook
+        .description
+          span A content management system used to create employee training material and exercises.
+        .technologies
+          span React | Node.js | Immutable | webpack | PHP | LESS
+      .project-card.md-trigger#iris(data-modal='iris')
+        .image
+          h4.name Iris
+        .description
+          span A simple, responsive weather application
+        .technologies
+          span React | Node.js | webpack | LESS
+      .project-card.md-trigger#hooli(data-modal='hooli')
+        .image
+          h4.name Hooli Drive
+        .description
+          span A client-server file transfer system.
+        .technologies
+          span C | Redis | TCP | UDP | Ubuntu
+      .project-card.md-trigger#heit(data-modal='heit')
+        .image
+          h4.name Heit Lab Website
+        .description
+          span A website built for the Heit Lab at Western University.
+        .technologies
+          span Wordpress | HTML | CSS | PHP
+    .md-modal#fulkerson-modal
+      .content
+        .image
+          h3.name Ford-Fulkerson Visual
+        .description
+          p This application provides a visual representation of the Ford-Fulkerson algorithm - a popular algorithm for
+            | determining the maximum flow of a directed flow network. The user has the ability to construct a custom
+            | flow network and view how the algorithm chooses paths for augmenting flow. A user may use this application
+            | to learn how the Ford-Fulkerson algorithm works, or study its edge cases by comparing various methods for
+            | choosing augmenting paths (breadth first search, depth first search, fattest path).
+          p This Ford-Fulkerson visual was built in March 2016 as a final, independent project for a 4th year algorithms
+            | course at The University of Western Ontario. The application was completed in approximately one week, and a
+            | final grade of 90% was received.
+          p The project was built using #[a(target="_blank", href="https://d3js.org/") D3], a JavaScript library for building visualization components based on data. As
+            | I already had some experience using D3 for a thesis project, and was aware that it had the capabilities to
+            | create the application I had in mind based on other applications I discovered, D3 seemed like the best choice.
+            | Other technologies that I used include #[a(target="_blank", href="https://nodejs.org/") Node.js], ES6,
+            | #[a(target="_blank", href="https://mochajs.org/") Mocha] and #[a(target="_blank", href="http://chaijs.com/") Chai].
+          p This project was an excellent learning experience. Not only did it vastly increase my knowledge of D3, I also
+            | took the opportunity to learn more about ES6 (the new JavaScript standard) and employed test-driven development
+            | where I could using Mocha and Chai.
+        .actions
+          a(href='#')
+            button Try It!
+          a(href='#')
+            button View Source
+    .md-modal#guidebook-modal
+      .md-content
+        h3 Guidebook
+        p This is a modal window
+    .md-modal#iris-modal
+      .md-content
+        h3 Iris Weather App
+        p This is a modal window
+    .md-modal#hooli-modal
+      .md-content
+        h3 Hooli Drive
+        p This is a modal window
+    .md-modal#heit-modal
+      .md-content
+        h3 Het Lab Website
+        p This is a modal window
+    .md-overlay
