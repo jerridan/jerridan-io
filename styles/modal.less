@@ -12,6 +12,7 @@
   transform: translateX(-50%) translateY(-50%);
   background: #FFF;
   color: #333;
+  border-radius: 2px;
   @media @mobile {
     width: 100%;
   }
@@ -37,17 +38,6 @@
 .md-show ~ .md-overlay {
   opacity: 1;
   visibility: visible;
-}
-
-.md-content {
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.md-show {
-  .md-content {
-    opacity: 1;
-  }
 }
 
 .md-close {

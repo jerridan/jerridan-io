@@ -43,7 +43,9 @@ section#projects
         .image
           h3.name Ford-Fulkerson Visual
         .description
-          p This application provides a visual representation of the Ford-Fulkerson algorithm - a popular algorithm for
+          p This application provides a visual representation of the
+            | &nbsp#[a(target="_blank", href="https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm") Ford-Fulkerson]
+            | algorithm - a popular algorithm for
             | determining the maximum flow of a directed flow network. The user has the ability to construct a custom
             | flow network and view how the algorithm chooses paths for augmenting flow. A user may use this application
             | to learn how the Ford-Fulkerson algorithm works, or study its edge cases by comparing various methods for
@@ -51,33 +53,87 @@ section#projects
           p This Ford-Fulkerson visual was built in March 2016 as a final, independent project for a 4th year algorithms
             | course at The University of Western Ontario. The application was completed in approximately one week, and a
             | final grade of 90% was received.
-          p The project was built using #[a(target="_blank", href="https://d3js.org/") D3], a JavaScript library for building visualization components based on data. As
-            | I already had some experience using D3 for a thesis project, and was aware that it had the capabilities to
-            | create the application I had in mind based on other applications I discovered, D3 seemed like the best choice.
-            | Other technologies that I used include #[a(target="_blank", href="https://nodejs.org/") Node.js], ES6,
-            | #[a(target="_blank", href="https://mochajs.org/") Mocha] and #[a(target="_blank", href="http://chaijs.com/") Chai].
+          p The project was built using #[a(target="_blank", href="https://d3js.org/") D3], a JavaScript library for
+            | building visualization components based on data. As I already had some experience using D3 for a thesis
+            | project, and was aware that it had the capabilities to create the application I had in mind based on other
+            | applications I discovered, D3 seemed like the best choice. Other technologies that I used include Node.js,
+            | ES6, #[a(target="_blank", href="https://mochajs.org/") Mocha] and
+            | #[a(target="_blank", href="http://chaijs.com/") Chai].
           p This project was an excellent learning experience. Not only did it vastly increase my knowledge of D3, I also
             | took the opportunity to learn more about ES6 (the new JavaScript standard) and employed test-driven development
             | where I could using Mocha and Chai.
         .actions
-          a(href='#')
+          a(target='_blank' href='#')
             button Try It!
-          a(href='#')
+          a(target='_blank' href='https://github.com/jerridan/ford-fulkerson-visualization')
             button View Source
     .md-modal#guidebook-modal
-      .md-content
-        h3 Guidebook
-        p This is a modal window
+      .content
+        .image
+          h3.name Guidebook
+        .description
+          p Guidebook is a tool that employers can use to create simple, custom training material and exercises for their
+            | employees. Digital pages can be filled with videos, images, short quizzes and text boxes, which can then
+            | be accessed by employees who are given access.
+          p I worked on this application with a team of developers and designers during my time at
+            | #[a(target="_blank", href="http://icomproductions.ca/") &nbspICOM Productions Inc.],
+            | an e-learning solutions company in Calgary, AB. The project was a huge success, with multiple employers
+            | purchasing it before development had finished, and continues to be offered by ICOM.
+          p The front-end of Guidebook was built with React, while the backend was built with PHP. Other tools like
+            | &nbspReflux, Immutable, Node.js, webpack and LESS were also used.
+          p This project was my first experience using React, which quickly became my favorite JavaScript tool for
+            | building user interfaces. The majority of my work was spent on the front-end, where a good deal of my focus
+            | was on creating the interactive quiz modules and styling the application according to Google's Material Design.
+        .actions
+          a(target="_blank" href='projects/guidebook_screenshot.jpg')
+            button Screenshot
     .md-modal#iris-modal
-      .md-content
-        h3 Iris Weather App
-        p This is a modal window
+      .content
+        .image
+          h3.name Iris Weather App
+        .description
+          p Iris is a very simple application that displays the current weather information for a user's location.
+            | &nbspHTML5 Geolocation and the Google Maps API are used to find the user's location, and the forecast.io service
+            | is used to get the current weather data.
+          p I built this as a learning experience for myself, wanting to know more about React and HTML5 Geolocation.
+            | Other tools used include Node.js, webpack and LESS.
+        .actions
+          a(target='_blank' href='#')
+            button Try It!
+          a(target='_blank' href='https://github.com/jerridan/iris')
+            button View Source
     .md-modal#hooli-modal
-      .md-content
-        h3 Hooli Drive
-        p This is a modal window
+      .content
+        .image
+          h3.name Hooli Drive
+        .description
+          p Hooli Drive is a client-server file transfer system. It works via 3 main programs - the
+            | client, a database server, and a file upload server. The client scans a specified directory for files and
+            | sends the file names and checksums to a database server over a TCP connection. The database server responds
+            | with a list of new or modified files, which the client will then send to the upload server over a reliable
+            | UDP connection.
+          p This application was built over the course of 3 separate assignments for a 3rd year computer networking
+            | &nbspcourse at The University of Western Ontario, and achieved a final grade of 102.5%.
+          p Hooli Drive was built with C on an Ubuntu 14.04 Vagrant machine, and uses Redis for the database.
+          p While coding in C can be tedious, I enjoyed the learning experience and came to a greater appreciation for
+            | &nbspthe language. I value the knowledge I gained in using TCP and UDP, as well as the
+            | #[a(target="_blank", href="https://en.wikipedia.org/wiki/Stop-and-wait_ARQ") Stop-and-Wait] UDP protocol.
+        .actions
+          a(target='_blank' href='https://github.com/jerridan/hooli_drive')
+            button View Source
     .md-modal#heit-modal
-      .md-content
-        h3 Het Lab Website
-        p This is a modal window
+      .content
+        .image
+          h3.name Heit Lab Website
+        .description
+          p My first experience building a website for a client, the Heit Lab website was built during the summer of
+            | &nbsp2013 as part of a student employment program. The lab director, Dr. Bryan Heit, was looking for a simple
+            | website to display information about his lab and research, as well as a small blog.
+          p This website was built using Wordpress, using PHP, HTML and CSS to create a custom theme and
+            | &nbsp#[a(target="_blank", href="http://foundation.zurb.com/") Foundation] as an HTML framework.
+          p Dr. Heit was an excellent client to work for and was very satisfied with the end result.
+        .actions
+          .actions
+            a(target='_blank' href='http://phagocytes.ca/')
+              button View Site
     .md-overlay
