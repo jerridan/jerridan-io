@@ -10,11 +10,13 @@
     "pug": "^2.0.0-alpha6"
   },
   "devDependencies": {
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.9.1",
+    "uglify-js": "^2.6.2"
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "minimize": "uglifyjs js/app.js -o js/app.min.js && uglifyjs js/set_height.js -o js/set_height.min.js"
   },
   "author": "Jerridan Quiring",
   "license": "ISC"

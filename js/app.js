@@ -1,7 +1,7 @@
 // set min-height of home section to full window height
-$('#home').css('min-height', function () {
-  return $(window).height();
-});
+// $('#home').css('min-height', function () {
+//   return $(window).height();
+// });
 
 // open/close mobile menu
 if ($(window).width() < 640) {
