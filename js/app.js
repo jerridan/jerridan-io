@@ -1,5 +1,7 @@
-// set height of home section
-$('#home').height($(window).height());
+// set min-height of home section to full window height
+$('#home').css('min-height', function () {
+  return $(window).height();
+});
 
 // open/close mobile menu
 if ($(window).width() < 640) {
@@ -24,7 +26,7 @@ $('.md-trigger').each(function () {
 // close modals when close button or overlay is clicked
 $('.md-close, .md-overlay').each(function () {
   $(this).on('touchend click', function () {
-    $('.md-modal').each(function() {
+    $('.md-modal').each(function () {
       $(this).removeClass('md-show');
     });
   });
