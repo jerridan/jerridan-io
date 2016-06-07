@@ -5,13 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.13.4",
-    "jade": "^1.11.0",
     "less-middleware": "^2.1.0",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "pug": "^2.0.0-alpha6"
   },
   "devDependencies": {
-    "nodemon": "^1.9.1",
-    "pug": "^2.0.0-alpha6"
+    "nodemon": "^1.9.1"
   },
   "scripts": {
     "start": "node index.js",
