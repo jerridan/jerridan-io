@@ -5,7 +5,22 @@
           rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5)
   ),
-  url('railway_jungle_desktop.jpg') center; // TODO: Optimize for tablets, mobiles
+  url('peru_mountains_desktop.jpg') center top;
+  background-size: cover;
+  @media @tablet {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ),
+    url('peru_mountains_tablet.jpg') center top;
+  }
+  @media @mobile {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ),
+    url('peru_mountains_mobile.jpg') center top;
+  }
   .title {
     text-align: center;
     padding: 3rem 0;
@@ -60,46 +75,47 @@
       &#hooli {
         .image {
           background: linear-gradient(
-                  rgba(0, 0, 0, 0.5),
-                  rgba(0, 0, 0, 0.5)
+                  rgba(0, 0, 0, 0.35),
+                  rgba(0, 0, 0, 0.35)
           ),
-          url('projects/hooli.png') center no-repeat;
+          url('projects/hooli_600_310.jpg') center no-repeat;
         }
       }
       &#fulkerson {
         .image {
           background: linear-gradient(
-                  rgba(0, 0, 0, 0.5),
-                  rgba(0, 0, 0, 0.5)
+                  rgba(0, 0, 0, 0.35),
+                  rgba(0, 0, 0, 0.35)
           ),
-          url('projects/fulkerson.jpg') center;
+          url('projects/fulkerson_600_310.jpg') no-repeat;
+          background-size: cover;
         }
       }
       &#guidebook {
         .image {
           background: linear-gradient(
-                  rgba(0, 0, 0, 0.5),
-                  rgba(0, 0, 0, 0.5)
+                  rgba(0, 0, 0, 0.35),
+                  rgba(0, 0, 0, 0.35)
           ),
-          url('projects/icom_logo.png') center no-repeat;
+          url('projects/guidebook_600_310.jpg') top right no-repeat;
         }
       }
       &#iris {
         .image {
           background: linear-gradient(
-                  rgba(0, 0, 0, 0.5),
-                  rgba(0, 0, 0, 0.5)
+                  rgba(0, 0, 0, 0.35),
+                  rgba(0, 0, 0, 0.35)
           ),
-          url('projects/iris.jpg') center no-repeat;
+          url('projects/iris_600_310.jpg') center no-repeat;
         }
       }
       &#heit {
         .image {
           background: linear-gradient(
-                  rgba(0, 0, 0, 0.5),
-                  rgba(0, 0, 0, 0.5)
+                  rgba(0, 0, 0, 0.35),
+                  rgba(0, 0, 0, 0.35)
           ),
-          url('projects/heit.jpg') center no-repeat;
+          url('projects/heit_600_310.jpg') center no-repeat;
         }
       }
     }
@@ -128,7 +144,7 @@
       p {
         font-weight: 400;
         a {
-          color: #303F9F;
+          color: #448AFF;
         }
       }
     }
@@ -136,18 +152,6 @@
       text-align: center;
       border-top: 1px solid rgba(0, 0, 0, 0.1);
       padding: 1rem 0;
-      button {
-        background: none;
-        outline: none;
-        border: none;
-        color: #303F9F;
-        font-weight: 700;
-        font-size: 1.4rem;
-        padding: 0.75rem;
-        &:hover {
-          background: rgba(0, 0, 0, 0.1);
-        }
-      }
     }
   }
   #fulkerson-modal {
@@ -156,7 +160,7 @@
               rgba(0, 0, 0, 0.5),
               rgba(0, 0, 0, 0.5)
       ),
-      url('projects/fulkerson_600_150.jpg') center no-repeat;
+      url('projects/fulkerson_600_310.jpg') center no-repeat;
     }
   }
   #guidebook-modal {
@@ -165,7 +169,7 @@
               rgba(0, 0, 0, 0.5),
               rgba(0, 0, 0, 0.5)
       ),
-      url('projects/guidebook_600_150.jpg') center no-repeat;
+      url('projects/guidebook_600_310.jpg') top right no-repeat;
     }
   }
   #iris-modal {
@@ -174,7 +178,7 @@
               rgba(0, 0, 0, 0.5),
               rgba(0, 0, 0, 0.5)
       ),
-      url('projects/iris_600_150.jpg') center no-repeat;
+      url('projects/iris_600_310.jpg') center no-repeat;
     }
   }
   #hooli-modal {
@@ -183,7 +187,7 @@
               rgba(0, 0, 0, 0.5),
               rgba(0, 0, 0, 0.5)
       ),
-      url('projects/hooli_600_150.jpg') center no-repeat;
+      url('projects/hooli_600_310.jpg') center no-repeat;
     }
   }
   #heit-modal {
@@ -192,7 +196,7 @@
               rgba(0, 0, 0, 0.5),
               rgba(0, 0, 0, 0.5)
       ),
-      url('projects/heit_600_150.jpg') center no-repeat;
+      url('projects/heit_600_310.jpg') top center no-repeat;
     }
   }
 }

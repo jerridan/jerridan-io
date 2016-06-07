@@ -10,6 +10,7 @@ app.use(lessMiddleware(__dirname + '/styles'));
 app.use(express.static(__dirname + '/styles'));
 app.use(express.static(__dirname + '/images'));
 app.use(express.static(__dirname + '/js'));
+app.use(express.static(__dirname + '/pdf'));
 
 app.get('/', function (req, res) {
   res.render('index');

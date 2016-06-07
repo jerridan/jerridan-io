@@ -8,6 +8,9 @@
   ),
   url('union_station_desktop.jpg') center bottom;
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   @media @tablet {
     background: linear-gradient(
             rgba(0, 0, 0, 0.5),
@@ -22,9 +25,14 @@
     ),
     url('union_station_mobile.jpg') center bottom;
   }
+  .container {
+    //display: flex;
+    //justify-content: center;
+    //flex-direction: column;
+  }
   .title {
     text-align: center;
-    margin: 7.5rem 0 3rem;
+    margin: 3rem 0 3rem;
   }
   .profile-pic {
     width: 150px;
@@ -53,13 +61,6 @@
     }
   }
   .introduction {
-    text-align: center;
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    width: 57.6rem;
     margin: 3rem auto 0;
-    @media @mobile {
-      width: 100%;
-    }
   }
 }
