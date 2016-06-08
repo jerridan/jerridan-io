@@ -46,14 +46,32 @@
     .social-icon {
       display: inline-block;
       margin: 1rem auto;
-      .zmdi-twitter:hover {
-        color: #00ACED;
+      width: 2rem;
+      height: 2rem;
+      &:hover {
+        cursor: pointer;
       }
-      .zmdi-linkedin:hover {
-        color: #0077B5;
+    }
+    .twitter {
+      background: url('twitter_logo_white.svg') no-repeat;
+      background-size: contain;
+      width: 2.1rem;
+      &:hover {
+        background-image: url('twitter_logo_blue.svg');
       }
-      .zmdi-github:hover {
-        color: #4078C0;
+    }
+    .linkedin {
+      background: url('linkedin_white.svg');
+      background-size: contain;
+      &:hover {
+        background-image: url('linkedin_blue.svg');
+      }
+    }
+    .github {
+      background: url('github_white.svg');
+      background-size: contain;
+      &:hover {
+        background-image: url('github_blue.svg');
       }
     }
   }

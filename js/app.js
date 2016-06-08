@@ -1,21 +1,16 @@
-// set min-height of home section to full window height
-// $('#home').css('min-height', function () {
-//   return $(window).height();
-// });
-
 // open/close mobile menu
 if ($(window).width() < 640) {
-  $('#menu-icon').on('touchend', function () {
+  $('#menu-icon').on('click', function () {
     $('#main-menu').toggleClass('open');
   });
-  $('#main-menu li a').on('touchend', function (evt) {
+  $('#main-menu li a').on('click', function (evt) {
     evt.preventDefault();
     $('#main-menu').toggleClass('open');
     var anchor = $(this).attr('href');
     $('html, body').animate({scrollTop: $(anchor).position().top}, 500);
   });
 } else {
-  $('#main-menu li a').on('touchend click', function (evt) {
+  $('#main-menu li a').on('click', function (evt) {
     evt.preventDefault();
     var anchor = $(this).attr('href');
     if (anchor === '#skills') {
@@ -53,7 +48,7 @@ $(document).scroll(function () {
 
 // trigger modals for project details when card are clicked
 $('.md-trigger').each(function () {
-  $(this).on('touchend click', function () {
+  $(this).on('click', function () {
     var modal_id = '#' + $(this).attr('data-modal') + '-modal';
     $(modal_id).addClass('md-show');
   });
@@ -61,7 +56,7 @@ $('.md-trigger').each(function () {
 
 // close modals when close button or overlay is clicked
 $('.md-close, .md-overlay').each(function () {
-  $(this).on('touchend click', function () {
+  $(this).on('click', function () {
     $('.md-modal').each(function () {
       $(this).removeClass('md-show');
     });
